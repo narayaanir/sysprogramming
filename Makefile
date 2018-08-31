@@ -1,11 +1,11 @@
 # File Names
-EXEC = test
-SOURCES =$(wildcard *.cpp)
+EXEC = sysprogramming
+SOURCES =$(wildcard src/*.cpp)
 OBJECTS = $(SOURCES:.cpp=.o)
 
 # Compiler Variables
 CC = clang++
-CC_FLAGS = -std=c++11 -g -Wall -pedantic
+CC_FLAGS = -std=c++11 -g -Wall -pedantic -I include
 
 # Main target
 $(EXEC): $(OBJECTS)
